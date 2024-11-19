@@ -179,3 +179,4 @@ TuGraph 是一个高效的图数据库，能够处理大数据量、低延迟查
 - [ ]  JinaAI embeding模型的用法
 - [ ]  Embeding模型微调方法
 - [ ]  RAG自动评估
+- [ ]  .. 如果觉得有什么想了解或者实现的内容可以放到 future_practice 里面，有时间了就来实践更新
