@@ -14,7 +14,7 @@
   - [代码实现](./rag_agent/extend_adaptive_rag.ipynb)
 - 检索优化：向量检索、关键词检索、图检索
   - [代码实现](./data_retriever/data_retriever.ipynb)
-- 表达优化：回答风格和语气调整
+- 表达优化：回答风格和语气调整、实现知识库对话记忆
   - [代码实现](./rag_agent/base_rag_agent.ipynb)
 
 ### 3. 高级应用场景
