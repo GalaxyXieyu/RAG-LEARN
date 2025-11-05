@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# 环境变量
+.env
+.env.local
+
+# 临时文件
+*.log
+*.tmp
+temp/
+tmp/
+
+# 向量数据库
+*.faiss
+*.pkl
+chroma_db/
+
+# 文档上传目录
+static/documents/uploads/
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# Azure 配置
+azure_config.json
+
+venv/

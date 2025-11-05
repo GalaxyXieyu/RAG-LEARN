@@ -1,0 +1,361 @@
+# Milvus 生产环境配置模板
+# 场景：企业新闻检索系统（日新增100万条）
+# 版本：Milvus 2.3+
+# 更新时间：2024-11
+
+# ============================================
+# 一、Segment 管理配置
+# ============================================
+datanode:
+  segment:
+    # Segment 大小上限（MB）
+    # 当 Growing Segment 达到此大小时，自动触发 Flush
+    # 推荐值：512MB（约128万条1024维向量）
+    max_size: 512
+    
+    # Segment 最小大小（MB）
+    # Compaction 时，小于此大小的 Segment 会被忽略
+    # 推荐值：128MB
+    min_size: 128
+    
+    # Segment 最大行数
+    # 作为数据量的另一个触发条件
+    # 推荐值：1000000（100万条）
+    max_row_num: 1000000
+
+  # 二进制日志（Binlog）配置
+  binlog:
+    # 删除数据占比触发 Compaction
+    # 当删除数据占比超过此值时，触发 Compaction 清理
+    # 推荐值：0.15（15%）
+    garbage_collection_ratio: 0.15
+    
+    # Binlog 文件大小上限（MB）
+    max_size: 64
+
+# ============================================
+# 二、Flush 机制配置
+# ============================================
+common:
+  # Growing Segment 保留时间（秒）
+  # 即使数据量未达到 max_size，超过此时间也会触发 Flush
+  # 推荐值：86400秒（24小时）
+  # 说明：防止数据长时间停留在 Growing Segment 无法被索引
+  retentionDuration: 86400
+  
+  # 数据保留策略（TTL，Time To Live）
+  # 超过此时间的数据将被标记删除
+  # 0 表示永久保留
+  # 推荐值：2592000（30天）或 0（永久）
+  ttl: 0
+
+# ============================================
+# 三、Compaction 配置
+# ============================================
+dataCoord:
+  # 启用自动 Compaction
+  # 强烈推荐：true
+  enableAutoCompaction: true
+  
+  # Compaction 检查间隔（秒）
+  # 系统每隔此时间检查一次是否需要 Compaction
+  # 推荐值：10秒（快速响应）
+  compactionCheckInterval: 10
+  
+  # Compaction 执行间隔（秒）
+  # 定时触发 Compaction 的周期
+  # 推荐值：43200秒（12小时）
+  compactionRoundInterval: 43200
+  
+  # 单次 Compaction 的最大 Segment 数
+  # 控制 Compaction 的批次大小
+  # 推荐值：10-15
+  compactionMaxSegment: 15
+  
+  # Compaction 超时时间（秒）
+  # 单次 Compaction 的最大执行时间
+  # 推荐值：3600秒（1小时）
+  compactionTimeout: 3600
+
+# ============================================
+# 四、索引配置
+# ============================================
+indexNode:
+  # 启用索引构建
+  enableIndex: true
+  
+  # 索引构建并发数
+  # 控制同时构建索引的 Segment 数量
+  # 推荐值：1-4（根据 CPU 核数）
+  buildIndexConcurrency: 2
+  
+  # 索引构建内存限制（MB）
+  # 单个索引构建任务的内存上限
+  # 推荐值：4096MB（4GB）
+  buildIndexMemoryLimit: 4096
+
+# 默认索引配置（可在创建 Collection 时覆盖）
+index:
+  # 默认索引类型
+  # 选项：FLAT, IVF_FLAT, IVF_SQ8, IVF_PQ, HNSW, ANNOY
+  # 推荐：HNSW（高性能）或 IVF_FLAT（平衡）
+  defaultIndexType: HNSW
+  
+  # 默认距离度量类型
+  # 选项：L2, IP（内积）, COSINE
+  # 推荐：IP（适合归一化向量）
+  defaultMetricType: IP
+  
+  # HNSW 索引参数（如果使用 HNSW）
+  hnsw:
+    M: 16                # 连接数，越大精度越高但内存越大
+    efConstruction: 200  # 构建时搜索深度
+  
+  # IVF 索引参数（如果使用 IVF 系列）
+  ivf:
+    nlist: 1024          # 聚类中心数
+    nprobe: 16           # 查询时搜索的聚类数
+
+# ============================================
+# 五、查询配置
+# ============================================
+queryNode:
+  # 查询节点缓存配置
+  cacheEnabled: true
+  
+  # 缓存大小（MB）
+  # 用于缓存热数据，提高查询性能
+  # 推荐值：2048MB-8192MB
+  cacheSize: 4096
+  
+  # 查询并发数
+  # 同时处理的查询请求数
+  # 推荐值：CPU 核数
+  queryParallel: 16
+  
+  # 加载字段策略
+  # lazy: 延迟加载，mmap: 内存映射
+  # 推荐：mmap（平衡内存和性能）
+  loadFieldStrategy: mmap
+
+# 查询参数默认配置
+query:
+  # 默认查询超时时间（秒）
+  timeout: 30
+  
+  # 默认返回结果数
+  topK: 10
+  
+  # 搜索参数（HNSW）
+  hnsw_ef: 64  # 搜索时的探索深度，越大精度越高但越慢
+
+# ============================================
+# 六、资源限制
+# ============================================
+resources:
+  # Data Node 资源配置
+  dataNode:
+    # CPU 核数
+    cpu: 8
+    # 内存（支持单位：Ki, Mi, Gi）
+    memory: 16Gi
+    # 副本数（高可用）
+    replicas: 2
+  
+  # Query Node 资源配置
+  queryNode:
+    cpu: 16
+    memory: 64Gi
+    replicas: 3
+  
+  # Index Node 资源配置
+  indexNode:
+    cpu: 8
+    memory: 32Gi
+    replicas: 2
+  
+  # Proxy 资源配置
+  proxy:
+    cpu: 4
+    memory: 8Gi
+    replicas: 2
+
+# ============================================
+# 七、存储配置
+# ============================================
+storage:
+  # 对象存储配置（MinIO / S3）
+  # 用于存储 Segment 和索引文件
+  minio:
+    address: minio:9000
+    accessKeyID: minioadmin
+    secretAccessKey: minioadmin
+    useSSL: false
+    bucketName: milvus-bucket
+  
+  # 本地缓存路径
+  localPath: /var/lib/milvus
+  
+  # 是否启用本地缓存
+  enableCache: true
+  
+  # 本地缓存大小（GB）
+  cacheCapacity: 100
+
+# ============================================
+# 八、元数据存储（etcd）
+# ============================================
+etcd:
+  # etcd 集群地址
+  endpoints:
+    - etcd:2379
+  
+  # 根路径
+  rootPath: by-dev
+  
+  # 元数据存储路径
+  metaSubPath: meta
+  
+  # KV 存储路径
+  kvSubPath: kv
+
+# ============================================
+# 九、消息队列（Pulsar / Kafka）
+# ============================================
+pulsar:
+  # Pulsar 地址
+  address: pulsar://pulsar:6650
+  
+  # 最大消息大小（bytes）
+  maxMessageSize: 5242880  # 5MB
+  
+  # Tenant 和 Namespace
+  tenant: public
+  namespace: default
+
+# ============================================
+# 十、监控和日志
+# ============================================
+log:
+  # 日志级别：debug, info, warn, error
+  level: info
+  
+  # 日志格式：text, json
+  format: text
+  
+  # 日志输出路径
+  file:
+    rootPath: /var/log/milvus
+    maxSize: 300  # MB
+    maxAge: 10    # 天
+    maxBackups: 20
+
+# Metrics 配置
+metrics:
+  # 是否启用 Prometheus metrics
+  enabled: true
+  
+  # Metrics 端口
+  port: 9091
+
+# ============================================
+# 十一、性能调优
+# ============================================
+performance:
+  # 最大并发查询数
+  maxConcurrentQueries: 1000
+  
+  # 最大并发插入数
+  maxConcurrentInsert: 100
+  
+  # 批量插入大小
+  insertBatchSize: 65536
+  
+  # 搜索结果缓存时间（秒）
+  searchResultCacheTTL: 300
+
+# ============================================
+# 十二、高可用配置
+# ============================================
+ha:
+  # 启用高可用
+  enabled: true
+  
+  # 选举超时时间（秒）
+  electionTimeout: 10
+  
+  # 心跳间隔（秒）
+  heartbeatInterval: 1
+
+# ============================================
+# 十三、分层存储配置（热温冷）
+# ============================================
+# 注意：需要在应用层实现分层逻辑，这里提供参考配置
+
+# 热层（0-7天）
+partition_hot:
+  index_type: HNSW
+  metric_type: IP
+  index_params:
+    M: 16
+    efConstruction: 200
+  search_params:
+    ef: 64
+  ttl_days: 7
+
+# 温层（8-30天）
+partition_warm:
+  index_type: IVF_FLAT
+  metric_type: IP
+  index_params:
+    nlist: 1024
+  search_params:
+    nprobe: 32
+  ttl_days: 30
+
+# 冷层（31+天）
+partition_cold:
+  index_type: IVF_PQ
+  metric_type: IP
+  index_params:
+    nlist: 2048
+    m: 8        # 压缩到 1/8
+    nbits: 8
+  search_params:
+    nprobe: 64
+  ttl_days: 0   # 永久保留
+
+# ============================================
+# 使用说明
+# ============================================
+# 1. 根据实际硬件资源调整 resources 配置
+# 2. 根据数据规模调整 Segment max_size
+# 3. 根据查询 QPS 调整 queryNode replicas
+# 4. 定期检查监控指标，优化配置参数
+# 5. 在测试环境充分验证后再应用到生产环境
+
+# ============================================
+# 监控指标建议
+# ============================================
+# 重点关注：
+# 1. milvus_querynode_search_latency (查询延迟)
+# 2. milvus_datanode_segment_num (Segment 数量)
+# 3. milvus_querynode_cache_hit_rate (缓存命中率)
+# 4. milvus_indexnode_build_index_duration (索引构建耗时)
+# 5. milvus_compaction_duration (Compaction 耗时)
+
+# ============================================
+# 告警规则建议
+# ============================================
+# 严重告警：
+# - 查询延迟 P99 > 1秒
+# - Segment 数量 > 100
+# - 内存使用率 > 90%
+# - 索引构建失败
+
+# 警告告警：
+# - 查询延迟 P99 > 500ms
+# - Segment 数量 > 50
+# - 缓存命中率 < 50%
+# - Compaction 耗时 > 60分钟
+
