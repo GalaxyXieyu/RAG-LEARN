@@ -11,6 +11,9 @@ build/
 
 # Virtual Environment
 venv/
+
+# 向量嵌入微调目录（忽略本地Qwen相关文件）
+09_Embedding_Finetune/Qwen/
 env/
 ENV/
 .venv

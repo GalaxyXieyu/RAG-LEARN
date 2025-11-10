@@ -1,0 +1,2845 @@
+[
+  {
+    "stage": "土石方工程",
+    "sources": [
+      {
+        "source": "表B.1土方工程定额工期表",
+        "factors": [
+          {
+            "factor": "施工方式：是否机械土石方",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": "是",
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "挖深",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 5,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "工程量",
+            "unit": "立方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 150000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "土质",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "1、2、3类土",
+              "4类土"
+            ],
+            "default_value": "1、2、3类土",
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "地基处理工程",
+    "sources": [
+      {
+        "source": "表B.2.1强夯地基处理工程定额工期表",
+        "factors": [
+          {
+            "factor": "地基处理方式",
+            "unit": "次",
+            "mapping_key": null,
+            "options": null,
+            "default_value": "复合",
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "能量",
+            "unit": "KN×M",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 3000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 6000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.2.2插板处理地基定额工期表",
+        "factors": [
+          {
+            "factor": "地基处理方式：是否插板",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": "是",
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 6000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.2.3 袋装砂井处理地基定额工期表施工方式:袋装砂井处理",
+        "factors": [
+          {
+            "factor": "地基处理方式：是否袋装砂井",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.2.3袋装砂井处理地基定额工期表",
+        "factors": [
+          {
+            "factor": "处理地基面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 50000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.2.4复合地基定额工期表",
+        "factors": [
+          {
+            "factor": "地基处理方式：是否复合",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": "是",
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 6000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "处理深度",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 10,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.2.5锤击预制管桩工程定额工期表",
+        "factors": [
+          {
+            "factor": "预制管桩施工方式：是否锤击",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": "是",
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩长",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 10,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩数",
+            "unit": "根",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 200,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.2.6静压预制管桩工程定额工期表",
+        "factors": [
+          {
+            "factor": "预制管桩施工方式：是否静压",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩长",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 10,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩数",
+            "unit": "根",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 200,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.2.7钻孔灌注桩工程定额工期表",
+        "factors": [
+          {
+            "factor": "灌注桩施工方式：是否钻孔",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩径",
+            "unit": "毫米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 1000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩深",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 15,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩高",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 10,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": "等于桩深"
+          }
+        ]
+      },
+      {
+        "source": "表B.2.8冲孔灌注桩工程定额工期表",
+        "factors": [
+          {
+            "factor": "灌注桩施工方式：是否冲孔",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩径",
+            "unit": "毫米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 1000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩深",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 15,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩数",
+            "unit": "根",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 200,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.2.9人工挖孔桩工程定额工期表",
+        "factors": [
+          {
+            "factor": "灌注桩施工方式：是否人工挖孔",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩深",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 15,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "工程量",
+            "unit": "立方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 300,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": "桩径²×π×桩深×桩数"
+          }
+        ]
+      },
+      {
+        "source": "表B.2.10旋挖成孔灌注桩工程定额工期表",
+        "factors": [
+          {
+            "factor": "灌注桩施工方式：是否旋挖成孔",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩径",
+            "unit": "毫米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 1000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩深",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 15,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "桩数",
+            "unit": "根",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 200,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.2.11抗浮锚杆定额工期表",
+        "factors": [
+          {
+            "factor": "抗浮锚杆施工方式：是否锚杆钻机",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": "否",
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "抗浮区域面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": null,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "基坑支护工程",
+    "sources": [
+      {
+        "source": "表B.3.1重力式挡土墙支护基坑定额工期表",
+        "factors": [
+          {
+            "factor": "挡土墙施工方式：是否搅拌桩/旋喷桩",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "基坑周长",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 600,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "处理深度",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 10,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.3.2桩锚式支护基坑定额工期表",
+        "factors": [
+          {
+            "factor": "桩锚式施工方式：是否钻机/旋挖钻机/旋喷机/锚杆钻机",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "基坑周长",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 600,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "处理深度",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 10,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "锚道数",
+            "unit": "道",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 3,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.3.3桩与内支撑式支护基坑定额工期表",
+        "factors": [
+          {
+            "factor": "内支撑式施工方式：是否钻机/旋挖钻/旋喷机",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "样道数",
+            "unit": "道",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 2,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "基坑周长",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 600,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "处理深度",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 10,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表 B.3.4地下连续墙支护基坑定额工期表",
+        "factors": [
+          {
+            "factor": "地下连续墙施工方式：是否成槽机",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "基坑周长",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 600,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "挖槽深度",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 15,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "主体工程",
+    "sources": [
+      {
+        "source": "2、有地下室工程",
+        "factors": [
+          {
+            "factor": "地下室：是否有",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": "否",
+            "remark": "参考《上海市建设工程施工工期定额（2022）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地下室层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2023）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地下室面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2024）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "1、住宅工程",
+        "factors": [
+          {
+            "factor": "功能分类：是否住宅",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "1、住宅工程 结构类型：现浇钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "结构类型：是否现浇现浇钢筋混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "1、住宅工程 结构类型：装配式混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否住宅",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否装配式混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "2、福利院、养老院工程 结构类型:现浇钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否福利院、养老院",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否现浇现浇钢筋混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "2、福利院、养老院工程\n结构类型:现浇钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "2、福利院、养老院工程 结构类型：装配式混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否福利院、养老院",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否装配式混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "3、商业建筑工程 结构类型：现浇钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否商业建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否现浇现浇钢筋混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "3、商业建筑工程 结构类型：装配式混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否商业建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否装配式混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "4、旅馆酒店工程 结构类型：现钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否旅馆酒店",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否现浇现浇钢筋混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "4、旅馆酒店工程 结构类型：装配式混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否旅馆酒店",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否装配式混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "5、文化建筑工程 结构类型：现浇钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否文化建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否现浇现浇钢筋混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "5、文化建筑工程 结构类型：装配式混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否文化建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否装配式混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "6、卫生建筑工程 结构类型：现浇钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否卫生建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否现浇现浇钢筋混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "6、卫生建筑工程 结构类型：装配式混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否卫生建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否装配式混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "7、办公建筑工程 结构类型：现浇钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否办公建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否现浇现浇钢筋混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "7、办公建筑工程 结构类型：装配式混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否办公建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否装配式混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "8、科研建筑工程 结构类型：现浇钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否科研建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否现浇现浇钢筋混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "8、科研建筑工程 结构类型：装配式混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否科研建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否装配式混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "9、教学建筑工程 结构类型：现浇钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否教学建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否现浇现浇钢筋混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "9、教学建筑工程 结构类型：装配式混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否教学建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型：是否装配式混凝土",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "10、体育建筑工程 结构类型：现浇钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否体育建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "现浇现浇钢筋混凝土"
+            ],
+            "default_value": "现浇钢筋混凝土",
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "11、交通建筑工程 结构类型：现浇钢筋混凝土结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否交通建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "住宅工程",
+        "factors": [
+          {
+            "factor": "功能分类：是否住宅",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "钢结构"
+            ],
+            "default_value": "现浇钢筋混凝土",
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "体育场",
+        "factors": [
+          {
+            "factor": "功能分类：是否体育场",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "钢结构"
+            ],
+            "default_value": "现浇钢筋混凝土",
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "檐高",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 40,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": "层数*3"
+          }
+        ]
+      },
+      {
+        "source": "文化建筑",
+        "factors": [
+          {
+            "factor": "功能分类：是否文化建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "钢结构"
+            ],
+            "default_value": "现浇钢筋混凝土",
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "檐高",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 40,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": "层数*3"
+          }
+        ]
+      },
+      {
+        "source": "交通建筑",
+        "factors": [
+          {
+            "factor": "功能分类：是否交通建筑",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "结构类型",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "钢结构"
+            ],
+            "default_value": "现浇钢筋混凝土",
+            "remark": "参考《上海市建设工程施工工期定额（2026）》",
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "地上建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 100000,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "檐高",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 40,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": "层数*3"
+          }
+        ]
+      },
+      {
+        "source": "结构类型:框架核心筒结构",
+        "factors": [
+          {
+            "factor": "功能分类：是否大于40层",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": "否",
+            "remark": "参考《上海市建设工程施工工期定额（2025）》",
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "单层平均建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": null,
+            "remark": "参考《上海市建设工程施工工期定额（2027）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": "建筑面积/层数"
+          },
+          {
+            "factor": "层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 16,
+            "remark": "参考《上海市建设工程施工工期定额（2028）》",
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "装饰装修工程",
+    "sources": [
+      {
+        "source": "表B.5.0.5装修标准划分表",
+        "factors": [
+          {
+            "factor": "装修标准",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "一般/中级/高级"
+            ],
+            "default_value": "一般",
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.5.1酒店、宾馆装饰装修定额工期表",
+        "factors": [
+          {
+            "factor": "装修类型：是否酒店宾馆",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "装修标准",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "一般-三星/中级-四星/高级-五星"
+            ],
+            "default_value": "一般",
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 15000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.5.2住宅装饰装修定额工期表",
+        "factors": [
+          {
+            "factor": "装修类型：是否住宅",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": null,
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "装修标准",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "一般/中级/高级"
+            ],
+            "default_value": "一般",
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 15000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.5.3一般民用建筑装饰装修定额工期表",
+        "factors": [
+          {
+            "factor": "装修类型",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "除酒店宾馆、住宅外"
+            ],
+            "default_value": "是",
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "装修标准",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "一般/中级/高级"
+            ],
+            "default_value": "一般",
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "建筑面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 15000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.5.5.1大空间公共建筑幕墙定额工期表",
+        "factors": [
+          {
+            "factor": "特殊装修：是否存在大空间公共建筑幕墙",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": "否",
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "外墙装修高度",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": null,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "外墙装修面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": null,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.5.5.2高层建筑幕墙定额工期表",
+        "factors": [
+          {
+            "factor": "特殊装修：是否存在高层建筑幕墙",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "是",
+              "否"
+            ],
+            "default_value": "否",
+            "remark": null,
+            "kind": "boolean",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "外墙装修高度",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": null,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "外墙装修面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": null,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "设备安装工程",
+    "sources": [
+      {
+        "source": "表B.6.1电梯安装定额工期表",
+        "factors": [
+          {
+            "factor": "电梯",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "交流电梯（含客货梯、餐梯）/\n调频、调压、调速电梯（含客楼、货梯）/\n调频、调压、调速观景梯/\n液压梯（含客梯、货梯）/\n整装自动扶梯/\n自动步行道"
+            ],
+            "default_value": "交流电梯",
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "电梯层数",
+            "unit": "层",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 15,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "整装自动扶梯提升高度",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "自动步行道长度",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.6.2起重机安装定额工期表",
+        "factors": [
+          {
+            "factor": "起重机类型",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "电动单梁起重机/单轨电动动芦/电动门式双梁起量机"
+            ],
+            "default_value": 0,
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "起重机行程",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "起重机重量",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.6.3锅炉安装定额工期表",
+        "factors": [
+          {
+            "factor": "锅炉",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "快装锅炉/散装锅炉"
+            ],
+            "default_value": 0,
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "锅炉吨数",
+            "unit": "吨",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "锅炉数量",
+            "unit": "个",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表 B.6.4通风空调及设备安装定额工期表",
+        "factors": [
+          {
+            "factor": "通风空调",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "水冷中央空调 系 统 ( 冷 却 塔 )/风冷模块冷 (热)水空调 系统/变制冷剂流量 空 调 系 统 (VRV)"
+            ],
+            "default_value": "风冷模块冷 (热)水空调 系统",
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "风管长度",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 500,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.6.5变电室安装定额工期表",
+        "factors": [
+          {
+            "factor": "变电室容量",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "315(320)/630(560)/800(750)/1000/1999kV ·A（主要内容字段）"
+            ],
+            "default_value": 1000,
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "变电机台数",
+            "unit": "个",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 1,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.6.6发电机房安装定额工期表",
+        "factors": [
+          {
+            "factor": "柴油发电机组瓦数",
+            "unit": null,
+            "mapping_key": null,
+            "options": [
+              "100kW以内/500kW以内/1000kW以内/1350kW以内/1599kW以内（主要内容字段）"
+            ],
+            "default_value": "1000KW以内",
+            "remark": null,
+            "kind": "categorical",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "柴油发电机组数量",
+            "unit": "个",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 1,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.6.7冷冻机房安装定额工期表",
+        "factors": [
+          {
+            "factor": "冷冻机房总制冷量",
+            "unit": "kW",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.6.8冷库、冷藏间安装定额工期表",
+        "factors": [
+          {
+            "factor": "冷库、冷藏间冷藏能力",
+            "unit": "吨",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.6.9空压站安装定额工期表",
+        "factors": [
+          {
+            "factor": "通用空压站容量",
+            "unit": "立方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "仪表空压站容量",
+            "unit": "立方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "空压站数量",
+            "unit": "立方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.6.10金属容器安装定额工期表",
+        "factors": [
+          {
+            "factor": "浮顶罐容量",
+            "unit": "立方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "拱顶罐容量",
+            "unit": "立方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "球形罐容量",
+            "unit": "立方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "螺旋导轨储气柜容量",
+            "unit": "立方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.6.11消防设施安装定额工期表",
+        "factors": [
+          {
+            "factor": "消防自动报警系统（探测器、模块及警铃、报警按钮等未端装置数量）",
+            "unit": "个",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 200,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "室内消火栓系统（消火栓）数量套数",
+            "unit": "套",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 20,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "水喷酒自动灭火系统（喷洒头数量）",
+            "unit": "个",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 200,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "排烟系统风管长度",
+            "unit": "米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 500,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "气体自动灭火系统（喷洒头数量）",
+            "unit": "个",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 200,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表B.6.12建筑智能化安装定额工期表",
+        "factors": [
+          {
+            "factor": "智能化集成系统 (BMS)集成点个数",
+            "unit": "个",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 5000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "信息设施及应用系统（信息模块等前端接入信息点个数）",
+            "unit": "个",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 5000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          },
+          {
+            "factor": "建筑设备管理系统（传感器、控制器等前端装置的 点数）",
+            "unit": "个",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 500,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "stage": "室外工程",
+    "sources": [
+      {
+        "source": "表E.1园林景观工程定额工期表",
+        "factors": [
+          {
+            "factor": "园林景观工程占地面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 1000,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表E.2.1 铺种草皮定额工期表",
+        "factors": [
+          {
+            "factor": "铺种草皮工作量",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表E.2.2 种植花坛、花灌木定额工期表",
+        "factors": [
+          {
+            "factor": "种植花坛、花灌木工作量",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表E.2.3 种植乔木定额工期表",
+        "factors": [
+          {
+            "factor": "种植乔木工作量",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      },
+      {
+        "source": "表E.2.4 建筑立体绿化定额工期表",
+        "factors": [
+          {
+            "factor": "建筑立体绿化绿化面积",
+            "unit": "平方米",
+            "mapping_key": null,
+            "options": null,
+            "default_value": 0,
+            "remark": null,
+            "kind": "numeric",
+            "judge": null,
+            "quantity": null
+          }
+        ]
+      }
+    ]
+  }
+]
