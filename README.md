@@ -1,3 +1,19 @@
+# RAG-LEARN
+
+> A structured learning repo for retrieval-augmented generation, from practical foundations to enterprise-scale retrieval systems.
+
+[GitHub](https://github.com/GalaxyXieyu/RAG-LEARN) · [AgentsGalaxy](https://aigalaxy.top/)
+
+This repository is designed as a learning map, not a single demo. It covers data cleaning, retrieval, answer generation, GraphRAG, vector database architecture, and multimodal directions for people who want a more systematic RAG path.
+
+## Why this repo exists
+
+- collect RAG concepts, pitfalls, and runnable examples in one place
+- give learners a progression from basics to production-oriented topics
+- keep enterprise retrieval concerns close to hands-on notebooks and notes
+
+## 中文说明
+
 # RAG的道与术 🚀
 
 > 从零开始学习检索增强生成（Retrieval-Augmented Generation）技术，掌握企业级知识库搭建的完整方法论
@@ -388,4 +404,3 @@ python main.py
 ⭐ 如果这个项目对你有帮助，请给个Star支持一下！
 
 **Happy Learning! 🎉**
-
